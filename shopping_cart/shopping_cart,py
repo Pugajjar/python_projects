@@ -1,0 +1,24 @@
+# lets make the shopping cart program with the collection of the class
+foods = [] # this is the list
+prices = [] # this is the list
+total = 0
+
+while True:
+    food = input ("Enter the food (else q to quit ): ")
+    if food == 'q' or food =='Q':
+        break
+    else:
+        #this will take the price
+        price = float(input("Enter the price of the food :"))
+        # this will append the taken price into list price
+        prices.append(price)
+        foods.append(food)
+
+print("################## Your CART ########################")
+
+for food in foods:
+    print(food, end=" ")
+
+for price in prices :
+    total = total + price
+    print(total, end=" ")
